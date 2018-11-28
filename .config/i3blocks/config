@@ -1,0 +1,62 @@
+separator=false
+separator_block_width=5
+border_top=0
+border_left=0
+border_right=0
+border_bottom=4
+
+[updates]
+command=$HOME/scripts/updates.sh
+interval=60
+signal=2
+urgent=true
+
+
+[mediaplayer]
+label=  
+command=$HOME/scripts/mediaplayer
+instance=spotify
+interval=5
+signal=10
+border=#ECEFF4
+
+[monitor]
+command=$HOME/scripts/monitor.sh
+interval=60
+signal=2
+border=#ECEFF4
+
+[volume]
+label=  
+#color=#cc241d
+command=[[ -z "${BLOCK_BUTTON}" ]] || ( [[ "${BLOCK_BUTTON}" == "1" ]] && ((/usr/bin/pavucontrol -t 3 --name "pavucontrol-bar" || true) && $HOME/scripts/volume_control.py signal) || $HOME/scripts/volume_control.py toggle ); $HOME/scripts/volume_control.py i3blocks
+interval=5
+signal=1
+markup=pango
+border=#8FBCBB
+
+[brightness]
+label=  
+command=printf "%.0f " $(xbacklight -get)
+interval=10
+signal=2
+border=#88C0D0
+
+[wireless]
+label=  
+command=[[ -z "$(iwgetid -r)" ]] || echo "$(iwgetid -r) "
+interval=2
+border=#81A1C1
+
+[battery]
+command=$HOME/scripts/battery.sh
+interval=10
+border=#5E81AC
+
+[time]
+label=  
+command=echo "`date +'%a %d %b'` <b>`date +'%T'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
+interval=1
+markup=pango
+border=#B48EAD
+separator_block_width=0

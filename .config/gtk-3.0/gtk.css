@@ -1,0 +1,12 @@
+.window-frame {
+  box-shadow: none;
+  margin: 0
+}
+
+vte-terminal {
+  padding: 2px;
+}
+
+.termite {
+    padding: 2px;
+}

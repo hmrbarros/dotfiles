@@ -1,0 +1,4 @@
+directory: ~/music
+library: ~/.config/beets/data/musiclibrary.db
+import:
+    move: yes
