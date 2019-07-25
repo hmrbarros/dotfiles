@@ -2,3 +2,10 @@ directory: ~/music
 library: ~/.config/beets/data/musiclibrary.db
 import:
     move: yes
+    copy: no
+fetchart:
+        cautious: true
+        cover_names: front back
+        sources: amazon *
+
+plugins: fetchart

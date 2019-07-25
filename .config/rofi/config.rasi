@@ -11,5 +11,5 @@ configuration {
 	show-match: 		false;
 	separator-style: 	"solid";
 	hide-scrollbar: 	true;
-	theme:			".local/share/rofi/nord";
+	theme:			"~/.local/share/rofi/nord";
 }

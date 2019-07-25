@@ -219,30 +219,30 @@ assign [class="(?i)slack"]                       $ws5
 assign [class="(?i)firefox"]                     $ws10
 assign [class="(?i)inox"]                        $ws1
 
-bar {
-    status_command i3blocks
-    i3bar_command i3bar -t
-    position top
-    font pango:Hack, FontAwesome 10
-    separator_symbol "■"
-    bindsym button4 nop
-    bindsym button5 nop
-    tray_output primary
-    tray_padding 0
-    height 30
-    colors {
-        statusline         $white
-        background         $transparent
-        separator          $transparent
-
-#                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $transparent $darkwhite
-        inactive_workspace $transparent $transparent $white
-        active_workspace   $transparent $transparent $white
-        urgent_workspace   $darkred     $darkred     $transparent
-        binding_mode       $darkred     $darkred     $transparent
-    }
-}
+#bar {
+#    status_command i3blocks
+#    i3bar_command i3bar -t
+#    position top
+#    font pango:Hack, FontAwesome 10
+#    separator_symbol "■"
+#    bindsym button4 nop
+#    bindsym button5 nop
+#    tray_output primary
+#    tray_padding 0
+#    height 30
+#    colors {
+#        statusline         $white
+#        background         $transparent
+#        separator          $transparent
+#
+##                          BORDER       BACKGROUND   TEXT
+#        focused_workspace  $transparent $transparent $darkwhite
+#        inactive_workspace $transparent $transparent $white
+#        active_workspace   $transparent $transparent $white
+#        urgent_workspace   $darkred     $darkred     $transparent
+#        binding_mode       $darkred     $darkred     $transparent
+#    }
+#}
 
 # AUTOSTART
 exec_always --no-startup-id nitrogen --restore

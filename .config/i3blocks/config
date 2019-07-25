@@ -20,11 +20,11 @@ interval=5
 signal=10
 border=#ECEFF4
 
-[monitor]
-command=$HOME/scripts/monitor.sh
-interval=60
-signal=2
-border=#ECEFF4
+#[monitor]
+#command=$HOME/scripts/monitor.sh
+#interval=60
+#signal=2
+#border=#ECEFF4
 
 [volume]
 label=  

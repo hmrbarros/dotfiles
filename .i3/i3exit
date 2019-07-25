@@ -2,7 +2,7 @@
 
 lock() {
     #  killall compton
-    ~/.i3/locks/i3lock -n -b=5x6
+    ~/.i3/locks/corrupter-lock.sh
     #  compton -b
 }
 
